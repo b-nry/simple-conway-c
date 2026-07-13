@@ -112,7 +112,7 @@ int checkAliveNeighbors(char* table, int size, int position) {
     return neighbors;
 }
 
-bool 0Die(char* table, int size, int position) {
+bool shouldDie(char* table, int size, int position) {
     int neighbors = checkAliveNeighbors(table, size, position);
     if (neighbors == 2 || neighbors == 3)
         return false;
